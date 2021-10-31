@@ -1,0 +1,29 @@
+<form class="file-info" method="post">
+    <input type="hidden" name="id" value={{id}} />
+    <div>
+        {{id}}
+    </div>
+    <div>
+        <img src={{icon}} alt="icon" />
+    </div>
+    <div>
+        {{name}}
+    </div>
+    <div>
+        {{size}}
+    </div>
+    <div>
+        {{type}}
+    </div>
+    <div>
+        <input type="submit" name="action" formaction="/filemanager" value="DELETE" />
+    </div>
+    <div>
+        <a href="/info/?id={{id}}">
+            INFO
+        </a>
+    </div>
+    <div>
+        <input type="submit" name="action" formaction="/filemanager" value="DOWNLOAD" />
+    </div>
+</form>

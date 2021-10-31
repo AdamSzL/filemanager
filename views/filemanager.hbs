@@ -1,0 +1,21 @@
+<div class="left-sidebar">
+    <div>filemanager</div>
+    <a href="/reset">USUŃ DANE O PLIKACH Z TABLICY</a>
+</div>
+<div class="main-content">
+    <div class="files-header">
+        <div>id</div>
+        <div>image</div>
+        <div>name</div>
+        <div>size</div>
+        <div>type</div>
+        <div>-</div>
+        <div>-</div>
+        <div>-</div>
+    </div>
+    <div class="files-data">
+        {{#each files}}
+        {{> fileInfo}}
+        {{/each}}
+    </div>
+</div>
